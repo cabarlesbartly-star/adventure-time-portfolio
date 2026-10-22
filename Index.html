@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventure Time Portfolio</title>
+
+    <!-- Importing a playful, comic-style font -->
+    <link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Background Overlay -->
+    <div class="overlay"></div>
+
+    <!-- =========================
+         Navigation Bar
+    ========================== -->
+    <nav>
+        <div class="nav-logo">
+            🎒 Bartly Dela Cruz Portfolio
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+            <li>
+                <button class="theme-toggle" onclick="toggleTheme()">
+                    ☀️ / 🌙
+                </button>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- =========================
+         Main Container
+    ========================== -->
+    <main class="portfolio">
+
+        <!-- =========================
+             About Me Section
+        ========================== -->
+        <section id="about" class="page-section">
+
+            <!-- Flying Bee -->
+            <div class="flying-bee">
+                <div class="bee-wing wing-left"></div>
+                <div class="bee-wing wing-right"></div>
+                <div class="bee-body">
+                    <div class="bee-eye eye-left"></div>
+                    <div class="bee-eye eye-right"></div>
+                    <div class="bee-smile"></div>
+                </div>
+                <div class="bee-stinger"></div>
+
+                <!-- Night Fireflies -->
+                <div class="fireflies">
+                    <span class="firefly firefly-1"></span>
+                    <span class="firefly firefly-2"></span>
+                    <span class="firefly firefly-3"></span>
+                    <span class="firefly firefly-4"></span>
+                    <span class="firefly firefly-5"></span>
+                </div>
+            </div>
+
+            <!-- ABOUT ME CARD -->
+            <div class="container about-card" onclick="openAboutModal()">
+                <h2>About Me</h2>
+                <p>greetings adventurer!</p>
+                <div class="click-hint">
+                    ✨ Want to learn more about me? click here! ✨
+                </div>
+            </div>
+
+            <!-- RIGHT SIDE PAPER SCROLL MODAL -->
+            <div class="about-modal" id="aboutModal">
+                <div class="scroll-paper">
+                    <button class="close-modal" onclick="closeAboutModal(event)">✕</button>
+
+                    <!-- Profile Content -->
+                    <div class="profile-content">
+                        <div class="profile-photo">
+                            <img src="me.png.jfif" alt="My Photo">
+                        </div>
+
+                        <h2>Adventurer</h2>
+                        <h3>Bartly A. Dela Cruz</h3>
+                        <p>
+                            Welcome to my adventurer profile!
+                            I'm an adventurous creator who enjoys technology,
+                            coding, and leveling up my development skills.
+                        </p>
+
+                        <!-- Profile Information -->
+                        <div class="profile-info">
+                            <p><strong>🎓 Education:</strong> B.S. Information Technology</p>
+                            <p><strong>🎮 Hobbies:</strong> Gaming & Watching Movies</p>
+                            <p><strong>⚔️ Quest:</strong> Become a better developer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- =========================
+             Skills Section
+        ========================== -->
+        <section id="skills" class="page-section">
+            <div class="container">
+                <h2>Heroic Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-badge">
+                        Sword Fighting: Programming (HTML, CSS, JavaScript)
+                    </div>
+                    <div class="skill-badge">
+                        Enchiridion Logic: Microsoft Office (Word, Excel, PPT)
+                    </div>
+                    <div class="skill-badge">
+                        Magic: Soft Skills (Time Management, Adaptability, Teamwork, Communication)
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================
+             Education Section
+        ========================== -->
+        <section id="education" class="page-section">
+            <div class="container">
+                <h2>Education & Quests</h2>
+                <p>
+                    <strong>Elementary:</strong><br>
+                    CAA Elementary School - Main<br>
+                    <em>2009 - 2015</em>
+                </p>
+                <p>
+                    <strong>Junior High School:</strong><br>
+                    CAA National High School - Main<br>
+                    <em>2015 - 2019</em>
+                </p>
+                <p>
+                    <strong>Senior High School:</strong><br>
+                    Holy Rosary Academy of Las Piñas City<br>
+                    <strong>Strand:</strong> Humanities and Social Sciences<br>
+                    <em>2019 - 2021</em>
+                </p>
+                <p>
+                    <strong>College:</strong><br>
+                    Philippine Christian University<br>
+                    <strong>Degree:</strong> Bachelor of Science in Information Technology<br>
+                    <em>2021 - Present</em>
+                </p>
+            </div>
+        </section>
+
+        <!-- =========================
+             Contacts Section
+        ========================== -->
+        <section id="contacts" class="page-section">
+            <div class="container contact-card">
+                <h2>Let's Connect! 🌈</h2>
+                <p class="contact-intro">
+                    Want to reach me? Find me on my social accounts or send me an email!
+                </p>
+
+                <div class="social-links">
+                    <!-- Facebook -->
+                    <a href="https://www.facebook.com/share/1LPjq1yBBc/" target="_blank" class="social-button facebook">
+                        📘 <span>Facebook</span>
+                    </a>
+
+                    <!-- Instagram -->
+                    <a href="https://www.instagram.com/cruzbartlydela?stkn=MWtkMXZsYm1mdWRyYQ==" target="_blank" class="social-button instagram">
+                        📸 <span>Instagram</span>
+                    </a>
+
+                    <!-- Email -->
+                    <a href="mailto:Delacruzbartly@gmail.com" class="social-button email">
+                        📧 <span>Email Me</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- External Script File -->
+    <script src="script.js"></script>
+
+    <!-- SiteGPT AI Chatbot Widget -->
+    <script type="text/javascript">
+      window.$sitegpt=[];(function(){d=document;s=d.createElement("script");
+      s.src="https://sitegpt.ai/widget/b5a2bc63-c2d4-4551-8edf-847b418f3aca.js";s.async=1;
+      d.getElementsByTagName("head")[0].appendChild(s);})();
+    </script>
+
+</body>
+</html>
